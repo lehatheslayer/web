@@ -42,7 +42,7 @@ th, td {
    }
 }
 
-@media screen and (max-width:793px) {
+@media screen and (max-width:845px) {
    tbody {
       display: flex;
       flex-direction: row;
