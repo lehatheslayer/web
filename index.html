@@ -6,18 +6,23 @@
       <meta name="description" content="Портфолио">
       <title>Решетников Алексей</title>
       <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/table.css">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Lobster&?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
    </head>
    <body>
-      <header class="bg_1 center">
-         <a class="nav_el"href="#about-me">Обо мне</a>
-         <a class="nav_el"href="#contact">Контакты</a>
-         <a class="nav_el"href="#ascii-art">ASCII art</a>
-         <a class="nav_el"href="#code">Code</a>
-         <a class="nav_el"href="#quote">Цитата</a>
-         <h1 class="headline">LEHA THE SLAYER</h1>
+      <header class="bg_1">
+         <div class="header_nav_flex">
+            <a class="nav_el"href="#about-me">Обо мне</a>
+            <a class="nav_el"href="#contact">Контакты</a>
+            <a class="nav_el"href="#ascii-art">ASCII art</a>
+            <a class="nav_el"href="#code">Code</a>
+            <a class="nav_el"href="#quote">Цитата</a>
+         </div>
+         <div>
+            <h1 class="headline">LEHA THE SLAYER</h1>
+         </div>
       </header>
 
       <main>
@@ -36,89 +41,48 @@
             </ul>
          </section>
 
-         <section id="ascii-art" class="bg_2">
-            <h2 class="headline">Mona Lisa</h2>
-            <pre class="headline center">
-               _______
-       _,,ad8888888888bba,_
-    ,ad88888I888888888888888ba,
-  ,88888888I88888888888888888888a,
-,d888888888I8888888888888888888888b,
-d88888PP"""" ""YY88888888888888888888b,
-,d88"'__,,--------,,,,.;ZZZY8888888888888,
-,8IIl'"                ;;l"ZZZIII8888888888,
-,I88l;'                  ;lZZZZZ888III8888888,
-,II88Zl;.                  ;llZZZZZ888888I888888,
-,II888Zl;.                .;;;;;lllZZZ888888I8888b
-,II8888Z;;                 `;;;;;''llZZ8888888I8888,
-II88888Z;'                        .;lZZZ8888888I888b
-II88888Z; _,aaa,      .,aaaaa,__.l;llZZZ88888888I888
-II88888IZZZZZZZZZ,  .ZZZZZZZZZZZZZZ;llZZ88888888I888,
-II88888IZZ<'(@@>Z|  |ZZZ<'(@@>ZZZZ;;llZZ888888888I88I
-,II88888;   `""" ;|  |ZZ; `"""     ;;llZ8888888888I888
-II888888l            `;;          .;llZZ8888888888I888,
-,II888888Z;           ;;;        .;;llZZZ8888888888I888I
-III888888Zl;    ..,   `;;       ,;;lllZZZ88888888888I888
-II88888888Z;;...;(_    _)      ,;;;llZZZZ88888888888I888,
-II88888888Zl;;;;;' `--'Z;.   .,;;;;llZZZZ88888888888I888b
-]I888888888Z;;;;'   ";llllll;..;;;lllZZZZ88888888888I8888,
-II888888888Zl.;;"Y88bd888P";;,..;lllZZZZZ88888888888I8888I
-II8888888888Zl;.; `"PPP";;;,..;lllZZZZZZZ88888888888I88888
-II888888888888Zl;;. `;;;l;;;;lllZZZZZZZZW88888888888I88888
-`II8888888888888Zl;.    ,;;lllZZZZZZZZWMZ88888888888I88888
-II8888888888888888ZbaalllZZZZZZZZZWWMZZZ8888888888I888888,
-`II88888888888888888b"WWZZZZZWWWMMZZZZZZI888888888I888888b
-`II88888888888888888;ZZMMMMMMZZZZZZZZllI888888888I8888888
-`II8888888888888888 `;lZZZZZZZZZZZlllll888888888I8888888,
-II8888888888888888, `;lllZZZZllllll;;.Y88888888I8888888b,
-,II8888888888888888b   .;;lllllll;;;.;..88888888I88888888b,
-II888888888888888PZI;.  .`;;;.;;;..; ...88888888I8888888888,
-II888888888888PZ;;';;.   ;. .;.  .;. .. Y8888888I88888888888b,
-,II888888888PZ;;'                        `8888888I8888888888888b,
-II888888888'                              888888I8888888888888888b
-,II888888888                              ,888888I88888888888888888
-,d88888888888                              d888888I8888888888ZZZZZZZ
-,ad888888888888I                              8888888I8888ZZZZZZZZZZZZZ
-,d888888888888888'                              888888IZZZZZZZZZZZZZZZZZZ
-,d888888888888P'8P'                               Y888ZZZZZZZZZZZZZZZZZZZZZ
-,8888888888888,  "                                 ,ZZZZZZZZZZZZZZZZZZZZZZZZ
-d888888888888888,                                ,ZZZZZZZZZZZZZZZZZZZZZZZZZZZ
-888888888888888888a,      _                    ,ZZZZZZZZZZZZZZZZZZZZ888888888
-888888888888888888888ba,_d'                  ,ZZZZZZZZZZZZZZZZZ88888888888888
-8888888888888888888888888888bbbaaa,,,______,ZZZZZZZZZZZZZZZ888888888888888888
-88888888888888888888888888888888888888888ZZZZZZZZZZZZZZZ888888888888888888888
-8888888888888888888888888888888888888888ZZZZZZZZZZZZZZ88888888888888888888888
-888888888888888888888888888888888888888ZZZZZZZZZZZZZZ888888888888888888888888
-8888888888888888888888888888888888888ZZZZZZZZZZZZZZ88888888888888888888888888
-88888888888888888888888888888888888ZZZZZZZZZZZZZZ8888888888888888888888888888
-8888888888888888888888888888888888ZZZZZZZZZZZZZZ88888888888888888 Normand  88
-88888888888888888888888888888888ZZZZZZZZZZZZZZ8888888888888888888 Veilleux 88
-8888888888888888888888888888888ZZZZZZZZZZZZZZ88888888888888888888888888888888
-            </pre>
-         </section>
+         <div class="horizontal_flex">
+            <section id="ascii-art" class="bg_2">
+               <h2 class="headline">Thinking Cow</h2>
+               <pre class="headline">
+( The best cure for insomnia is to get a )
+( lot of sleep. -W.C. Fields             )
+ ----------------------------------------
+        o   ^__^
+         o  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+               </pre>
 
-         <section id="code" class="bg_1">
-            <h2 class="headline">Пример использования Scanner</h2>
-            <p><strong>Java Scanner Class</strong> (<i>java.util.Scanner</i>) - словно настоящий сканер, считывает данные из источника, который ты для него укажешь.
-               Например, из строки, из файла, из консоли. Далее он распознает эту информацию и обрабатывает нужным образом.</p>
+               <div class="indian_programming">
+                  <iframe src="https://giphy.com/embed/ze3rUtqHVHRyZZi3ql" width="480" height="354" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+               </div>
+            </section>
 
-            <pre class="headline">
-               <code>
-public class Main {
+            <section id="code" class="bg_1">
+               <h2 class="headline">Пример использования Scanner</h2>
+               <p><strong>Java Scanner Class</strong> (<i>java.util.Scanner</i>) - словно настоящий сканер, считывает данные из источника, который ты для него укажешь.
+                  Например, из строки, из файла, из консоли. Далее он распознает эту информацию и обрабатывает нужным образом.</p>
 
-   public static void main(String[] args) {
+               <pre class="headline">
+                  <code>
+   public class Main {
 
-       Scanner scanner = new Scanner("Люблю тебя, Петра творенье,\n" +
-               "Люблю твой строгий, стройный вид,\n" +
-               "Невы державное теченье,\n" +
-               "Береговой ее гранит");
-       String s = scanner.nextLine();
-       System.out.println(s);
+      public static void main(String[] args) {
+
+          Scanner scanner = new Scanner("Люблю тебя, Петра творенье,\n" +
+                  "Люблю твой строгий, стройный вид,\n" +
+                  "Невы державное теченье,\n" +
+                  "Береговой ее гранит");
+          String s = scanner.nextLine();
+          System.out.println(s);
+      }
    }
-}
-               </code>
-            </pre>
-         </section>
+                  </code>
+               </pre>
+            </section>
+         </div>
 
          <section id="quote" class="bg_2">
             <h2 class="headline">Цитата</h2>
@@ -127,9 +91,53 @@ public class Main {
                <cite>Мастер Угвэй</cite>
             </blockquote>
          </section>
+
+         <section id="table" class="bg_1">
+            <h2 class="headline">Таблица</h2>
+            <div class="table">
+               <table>
+                  <thead>
+                     <tr>
+                        <th>
+                           Column 1
+                        </th>
+                        <th>
+                           Column 2
+                        </th>
+                        <th>
+                           Column 3
+                        </th>
+                        <th>
+                           Column 4
+                        </th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td>Some dataaasdasdasdasda</td>
+                        <td>Some dataaasdasdasdasda</td>
+                        <td>Some dataaasdasdasdasda</td>
+                        <td>Some dataaasdasdasdasda</td>
+                     </tr>
+                     <tr>
+                        <td>Some dataaasdasdasdasda</td>
+                        <td>Some dataaasdasdasdasda</td>
+                        <td>Some dataaasdasdasdasda</td>
+                        <td>Some dataaasdasdasdasda</td>
+                     </tr>
+                     <tr>
+                        <td>Some dataaasdasdasdasda</td>
+                        <td>Some dataaasdasdasdasda</td>
+                        <td>Some dataaasdasdasdasda</td>
+                        <td>Some dataaasdasdasdasda</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </section>
       </main>
 
-      <footer class="bg_1">
+      <footer class="bg_2">
          <p class="headline">&copy; 2021 Leha</p>
       </footer>
    </body>

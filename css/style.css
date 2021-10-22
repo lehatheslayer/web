@@ -7,6 +7,22 @@ body {
    white-space: inherit;
 }
 
+header {
+   position: fixed;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100px;
+}
+
+header div {
+   text-align: center;
+}
+
+main {
+   margin-top: 100px;
+}
+
 footer {
    text-align: center;
 
@@ -15,7 +31,7 @@ footer {
 .nav_el {
    font-size: 120%;
    line-height: 150%;
-   padding: 1%;
+   padding: 0.5%;
    margin: 1%;
    text-transform: capitalize;
 }
@@ -26,9 +42,9 @@ footer {
    display: block;
    margin-left: auto;
    margin-right: auto;
-   margin-top: 10px;
+   margin-top: 15px;
    box-shadow: 0 19px 38px #ffffff, 0 15px 12px #ffffff;
-   margin-bottom: 10px;
+   margin-bottom: 20px;
 }
 
 #contact {
@@ -38,10 +54,6 @@ footer {
 .headline {
    margin: 0;
    padding: 10px;
-}
-
-.center {
-   text-align: center;
 }
 
 .bg_1 {
@@ -70,7 +82,6 @@ h2 {
 a {
     outline: none;
     text-decoration: none;
-    padding: 2px 1px 0;
 }
 a:link {
     color: #ffffff;
@@ -85,6 +96,35 @@ a:hover {
     background: #d31c3e
 }
 
-section {
+section, header {
    border: solid #d31c3e;
+}
+
+.indian_programming {
+   text-align: center;
+}
+
+
+@media screen and (max-width:1200px) {
+   #code {
+      display: none;
+   }
+
+   header {
+      font-size: 80%;
+      height: 80px;
+   }
+
+   main {
+      margin-top: 80px;
+   }
+}
+
+#ascii-art, #code {
+   width:100%
+}
+
+.horizontal_flex {
+   display: flex;
+   flex-direction: row;
 }

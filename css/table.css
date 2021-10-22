@@ -1,0 +1,51 @@
+table, th, td {
+   border: solid #d31c3e 1px;
+   border-collapse: collapse;
+}
+
+.table {
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 20px;
+   width: 90%;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+th, td {
+   text-align: center;
+   background: #282535;
+}
+
+th {
+   color: #d31c3e
+}
+
+th, td {
+   padding: 10px;
+}
+
+@media screen and (max-width:935px) {
+   table {
+      display: flex;
+      flex-direction: row;
+   }
+
+   thead tr, tbody tr {
+      display: flex;
+      flex-direction: column;
+   }
+
+   tbody {
+      display: flex;
+      flex-direction: row;
+   }
+}
+
+@media screen and (max-width:793px) {
+   tbody {
+      display: flex;
+      flex-direction: row;
+      overflow-x: auto;
+   }
+}
