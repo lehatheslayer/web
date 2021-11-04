@@ -5,6 +5,7 @@ body {
    font-size: 130%;
    font-family: 'Open Sans', sans-serif;
    white-space: inherit;
+   background: #282535;
 }
 
 header {
@@ -15,17 +16,20 @@ header {
    height: 100px;
 }
 
+footer {
+   position: block;
+   bottom: 0;
+   width: 99.7%;
+   height: 80px;
+   text-align: center;
+}
+
 header div {
    text-align: center;
 }
 
 main {
    margin-top: 100px;
-}
-
-footer {
-   text-align: center;
-
 }
 
 .nav_el {
@@ -47,13 +51,18 @@ footer {
    margin-bottom: 20px;
 }
 
+header h1 {
+   margin: 0;
+   padding: 8px;
+}
+
 #contact {
    padding-left: 25px;
 }
 
 .headline {
    margin: 0;
-   padding: 20px;
+   padding: 13px;
 }
 
 .bg_1 {
@@ -96,7 +105,7 @@ a:hover {
     background: #d31c3e
 }
 
-section, header {
+section, header, footer {
    border: solid #d31c3e;
 }
 

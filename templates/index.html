@@ -5,29 +5,28 @@
       <meta name="keywords" content="портфолио, разработка, программирование, web">
       <meta name="description" content="Портфолио">
       <title>Решетников Алексей</title>
-      <link rel="stylesheet" href="css/style.css">
-      <link rel="stylesheet" href="css/table.css">
+      <script src="../scripts/script.js"></script>
+      <link rel="stylesheet" href="../css/style.css">
+      <link rel="stylesheet" href="../css/table.css">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Lobster&?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
    </head>
    <body>
       <header class="bg_1">
-         <div class="header_nav_flex">
-            <a class="nav_el"href="#about-me">Обо мне</a>
-            <a class="nav_el"href="#contact">Контакты</a>
-            <a class="nav_el"href="#ascii-art">ASCII art</a>
-            <a class="nav_el"href="#code">Code</a>
-            <a class="nav_el"href="#quote">Цитата</a>
+         <div>
+            <a class="nav_el" href="index.html" id="home">Главная</a>
+            <a class="nav_el" href="achievements.html" id="achievements">Достижения</a>
+            <a class="nav_el" href="works.html" id="works">Работы</a>
          </div>
          <div>
-            <h1 class="headline">LEHA THE SLAYER</h1>
+            <h1>LEHA THE SLAYER</h1>
          </div>
       </header>
 
       <main>
          <section id="about-me" class="bg_2">
-            <img src="images/kaifudin.jpg" alt="" class="logo">
+            <img src="../images/kaifudin.jpg" alt="" class="logo">
             <h2 class="headline">Обо мне</h2>
             <p class="headline">Я Алексей. Это мое портфолио. L6jorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
          </section>
@@ -54,10 +53,6 @@
                 ||----w |
                 ||     ||
                </pre>
-
-               <div class="indian_programming">
-                  <iframe src="https://giphy.com/embed/ze3rUtqHVHRyZZi3ql" width="480" height="354" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-               </div>
             </section>
 
             <section id="code" class="bg_1">
@@ -68,18 +63,18 @@
                </div>
                <pre class="headline">
                   <code>
-   public class Main {
+public class Main {
 
-      public static void main(String[] args) {
+   public static void main(String[] args) {
 
-          Scanner scanner = new Scanner("Люблю тебя, Петра творенье,\n" +
-                  "Люблю твой строгий, стройный вид,\n" +
-                  "Невы державное теченье,\n" +
-                  "Береговой ее гранит");
-          String s = scanner.nextLine();
-          System.out.println(s);
-      }
+       Scanner scanner = new Scanner("Люблю тебя, Петра творенье,\n" +
+               "Люблю твой строгий, стройный вид,\n" +
+               "Невы державное теченье,\n" +
+               "Береговой ее гранит");
+       String s = scanner.nextLine();
+       System.out.println(s);
    }
+}
                   </code>
                </pre>
             </section>
