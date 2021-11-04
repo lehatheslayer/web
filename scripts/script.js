@@ -7,14 +7,16 @@ window.onload = function() {
    var element = document.createElement("div").appendChild(document.createElement('p').appendChild(document.createTextNode("Load time: " + loadTime + " sec")))
    footer[0].appendChild(element)
 
-   if (document.location.href.indexOf("works") > -1) {
-        var curelem = document.getElementById("works")
-    }
-    else if (document.location.href.indexOf("index") > -1) {
-        var curelem = document.getElementById("home")
-    }
-    else if (document.location.href.indexOf("achievements") > -1) {
-        var curelem = document.getElementById("achievements")
-    }
-    curelem.style.borderBottom = "2px solid #d31c3e"
+   if (window.location.href.endsWith("works.html") == true) {
+      var curelem = document.getElementById("works")
+   }
+   else if (window.location.href.endsWith("index.html") == true
+         || window.location.href.endsWith("web/") == true) {
+      var curelem = document.getElementById("home")
+   }
+   else if (window.location.href.endsWith("achievements.html") == true) {
+      var curelem = document.getElementById("achievements")
+   }
+
+   curelem.style.borderBottom = "2px solid #d31c3e"
 }
