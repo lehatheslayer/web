@@ -6,9 +6,10 @@ window.onload = function() {
 
    var element = document.createElement("div").appendChild(document.createElement('p').appendChild(document.createTextNode("Load time: " + loadTime + " sec")))
    footer[0].appendChild(element)
-
-   var curelem = document.querySelectorAll("[data-act]");
-   curelem.forEach(function(userItem) {
-      userItem.style.borderBottom = "2px solid #d31c3e";
+   
+   document.querySelectorAll("[data-nav]").forEach(function(el) {
+      if (el.href == document.location.href) {
+         el.classList.add("current_page")
+      }
    })
 }

@@ -176,3 +176,7 @@ section, header, footer {
 .gallery_item:hover {
    box-shadow: 0 19px 38px #ffffff, 0 15px 12px #ffffff;
 }
+
+.current_page {
+   border-bottom: 2px solid #d31c3e;
+}
