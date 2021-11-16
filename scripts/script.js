@@ -12,4 +12,6 @@ window.onload = function() {
          el.classList.add("current_page")
       }
    })
+
+   createElementsFromLocalStorageOnWindowLoad();
 }

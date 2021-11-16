@@ -6,7 +6,9 @@
       <meta name="description" content="Портфолио">
       <title>Решетников Алексей</title>
       <script src="scripts/script.js"></script>
+      <script src="scripts/constructor.js"></script>
       <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/constructor.css">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Lobster&?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
@@ -26,7 +28,22 @@
 
       <main>
          <section class="bg_2">
-            <h2 class="headline">Работы</h2>
+            <h2 class="headline">Конструктор</h2>
+
+            <div class="constructor center">
+               <div class="form_container">
+                  <form onsubmit="addEl(); return false" method="post">
+                     <input type="text" placeholder="What need to be done?" id="todo">
+                  </form>
+               </div>
+
+               <div id="constructor_result"></div>
+            </div>
+
+         </section>
+
+         <section class="bg_1">
+            <h2 class="headline">Галерея</h2>
 
             <div class="gallery">
                <img src="images/kaifudin.jpg" class="gallery_item">

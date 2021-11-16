@@ -6,6 +6,7 @@ body {
    font-family: 'Open Sans', sans-serif;
    white-space: inherit;
    background: #282535;
+   position: relative;
 }
 
 header {
@@ -17,10 +18,18 @@ header {
 }
 
 footer {
-   bottom: 0;
+   /* position: absolute; */
+   /* bottom: 0; */
+   /* width: 100%; */
    height: 80px;
    text-align: center;
 }
+
+/* body::after {
+   content: "";
+   display: block;
+   height: 80px;
+} */
 
 header div {
    text-align: center;
