@@ -13,5 +13,7 @@ window.onload = function() {
       }
    })
 
-   createElementsFromLocalStorageOnWindowLoad();
+   if (document.location.href === "constructor.html") {
+      createElementsFromLocalStorageOnWindowLoad();
+   }
 }
