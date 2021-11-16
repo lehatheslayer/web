@@ -12,20 +12,22 @@ createElementsFromLocalStorageOnWindowLoad = function() {
 }
 
 addEl = function(val = document.getElementById("todo").value) {
-   var options = localStorage.hasOwnProperty("list") ? JSON.parse(localStorage.getItem("list")) : [];
-   var counter = localStorage.hasOwnProperty("counter") ? localStorage.getItem("counter") : 0;
+   if (val != "") {
+      var options = localStorage.hasOwnProperty("list") ? JSON.parse(localStorage.getItem("list")) : [];
+      var counter = localStorage.hasOwnProperty("counter") ? localStorage.getItem("counter") : 0;
 
-   var tmp = {}
-   tmp.val = val;
-   tmp.status = "active";
-   tmp.idx = counter;
-   options.push(tmp);
+      var tmp = {}
+      tmp.val = val;
+      tmp.status = "active";
+      tmp.idx = counter;
+      options.push(tmp);
 
-   localStorage.setItem("list", JSON.stringify(options));
-   localStorage.setItem("counter", parseInt(counter, 10) + 1);
-   createNode(val, "active", counter);
+      localStorage.setItem("list", JSON.stringify(options));
+      localStorage.setItem("counter", parseInt(counter, 10) + 1);
+      createNode(val, "active", counter);
 
-   document.getElementById("todo").reset();
+      document.getElementById("todo").value = "";
+   }
 }
 
 createNode = function(val, status, idx) {

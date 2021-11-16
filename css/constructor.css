@@ -30,25 +30,41 @@
    margin-block-start: 1em;
    height: 50%;
    margin-left: auto;
-   margin-right: 15px;
+   margin-right: 20px;
+}
+
+
+#todo_btn {
+   width: 10%;
+   height: 70px;
+   border: solid #d31c3e 1px;
+   border-collapse: collapse;
+   background: #1f1d29;
+   border-top-right-radius: 5px;
+   color: white;
+   font-size: 25px;
+}
+
+#todo_btn:hover {
+   background: #d31c3e;
 }
 
 #todo {
-   padding-left: 10px;
-   width: 100%;
-   height: 70px;
    font-size: 25px;
+   padding-left: 10px;
+   width: 90%;
+   height: 70px;
    border: solid #d31c3e 1px;
    border-collapse: collapse;
    color: white;
    background: #1f1d29;
-   border-top-right-radius: 5px;
    border-top-left-radius: 5px;
    box-sizing: border-box;
 }
 
 form {
    margin: 0;
+   display: flex;
 }
 
 #constructor_result {
