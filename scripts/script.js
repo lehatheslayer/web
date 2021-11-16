@@ -8,7 +8,7 @@ window.onload = function() {
    footer[0].appendChild(element)
 
    document.querySelectorAll("[data-nav]").forEach(function(el) {
-      if (el.href === document.location.href) {
+      if (el.href === document.location.href || el.href + "?" === document.location.href) {
          el.classList.add("current_page")
       }
    })
