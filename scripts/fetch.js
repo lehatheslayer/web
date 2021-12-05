@@ -1,4 +1,4 @@
-window.onload = function fetchAPI() {
+function fetchAPI() {
    let loader = '<div class="cssload-container"> <span class="cssload-loader"><span class="cssload-loader-inner"></span></span></div>';
    document.getElementById('result').innerHTML = loader;
 

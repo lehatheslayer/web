@@ -13,5 +13,7 @@ window.onload = function() {
       }
    })
 
+   fetchAPI();
    createElementsFromLocalStorageOnWindowLoad();
+
 }
