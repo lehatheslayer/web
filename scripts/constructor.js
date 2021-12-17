@@ -1,4 +1,4 @@
-createElementsFromLocalStorageOnWindowLoad = function() {
+window.addEventListener('DOMContentLoaded', function() {
    if (!localStorage.hasOwnProperty("list")) {
       var options = [];
       localStorage.setItem("list", JSON.stringify(options));
@@ -9,10 +9,10 @@ createElementsFromLocalStorageOnWindowLoad = function() {
          createNode(options[opt].val, options[opt].status, options[opt].idx);
       }
    }
-}
+});
 
 addEl = function(val = document.getElementById("todo").value) {
-   if (val != "") {
+   if (/[^\s]/i.test(val)) {
       var options = localStorage.hasOwnProperty("list") ? JSON.parse(localStorage.getItem("list")) : [];
       var counter = localStorage.hasOwnProperty("counter") ? localStorage.getItem("counter") : 0;
 
@@ -31,37 +31,25 @@ addEl = function(val = document.getElementById("todo").value) {
 }
 
 createNode = function(val, status, idx) {
-   var element = document.createElement("div");
-   element.id = idx;
-   element.classList.add("element");
+   let template = document.querySelector("#constructor_template");
 
-   var paragraph = document.createElement("p");
-   paragraph.id = "text";
+   let clone = template.content.cloneNode(true);
+
+   clone.querySelector("div").id = idx;
+
    var text = document.createTextNode(val);
+   clone.querySelector("p").appendChild(text);
 
-   var checkbox = document.createElement("input");
-   checkbox.setAttribute("type", "checkbox");
-   checkbox.setAttribute("onclick", "changeStatus(this)");
-   checkbox.setAttribute("checkbox_id", idx);
+   clone.querySelector("input").setAttribute("checkbox_id", idx);
 
-   var delBtn = document.createElement("a");
-   delBtn.classList.add("delete_button");
-   var del_text = document.createTextNode("X");
-   delBtn.appendChild(del_text);
-   delBtn.setAttribute("onclick", "deleteNode(this)");
-   delBtn.setAttribute("btn_id", idx);
+   clone.querySelector("a").setAttribute("btn_id", idx);
 
    if (status == "done") {
-      paragraph.classList.add("done");
-      checkbox.checked = true;
+      clone.querySelector("p").classList.add("done");
+      clone.querySelector("input").checked = true;
    }
 
-   paragraph.appendChild(text);
-   element.appendChild(checkbox);
-   element.appendChild(paragraph);
-   element.appendChild(delBtn);
-
-   document.getElementById("constructor_result").appendChild(element);
+   document.getElementById("constructor_result").appendChild(clone);
 }
 
 changeStatus = function(checkbox) {

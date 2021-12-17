@@ -27,7 +27,6 @@
       </header>
 
       <main>
-
          <section class="bg_2">
             <h2 class="headline">Конструктор</h2>
 
@@ -39,7 +38,9 @@
                   </form>
                </div>
 
-               <div id="constructor_result"></div>
+               <div id="constructor_result">
+
+               </div>
             </div>
 
          </section>
@@ -64,5 +65,13 @@
       <footer class="bg_2">
          <p class="headline">&copy; 2021 Leha</p>
       </footer>
+
+      <template id="constructor_template">
+         <div class="element">
+            <input type="checkbox" onclick="changeStatus(this)">
+            <p id="text"></p>
+            <a class="delete_button" onclick="deleteNode(this)">X</a>
+         </div>
+      </template>
    </body>
 </html>

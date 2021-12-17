@@ -1,6 +1,6 @@
 var time1 = new Date().getTime();
 
-window.onload = function() {
+window.addEventListener('DOMContentLoaded', function() {
    var loadTime = (new Date().getTime() - time1) / 1000;
    var footer = document.getElementsByTagName("footer");
 
@@ -12,8 +12,4 @@ window.onload = function() {
          el.classList.add("current_page")
       }
    })
-
-   fetchAPI();
-   createElementsFromLocalStorageOnWindowLoad();
-
-}
+});

@@ -1,4 +1,4 @@
-function fetchAPI() {
+window.addEventListener('DOMContentLoaded', function() {
    let loader = '<div class="cssload-container"> <span class="cssload-loader"><span class="cssload-loader-inner"></span></span></div>';
    document.getElementById('result').innerHTML = loader;
 
@@ -24,6 +24,7 @@ function fetchAPI() {
          }
 
          json.filter(FilterFunc).forEach((item) => {
+            console.log(item)
             var image = document.createElement("img");
             image.src = item.url;
             image.classList.add("gallery_item");
@@ -39,7 +40,7 @@ function fetchAPI() {
          document.getElementById('result').innerHTML = '<div class="cssload-container"><p>⚠Что-то пошло не так</p></div>';
          console.log('Error: ' + error);
       });
-}
+});
 
 function FilterFunc(i){
     let num = localStorage.getItem("number");
