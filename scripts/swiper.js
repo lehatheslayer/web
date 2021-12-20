@@ -20,5 +20,14 @@ window.addEventListener('DOMContentLoaded', function() {
      },
 
      loop: true,
+     effect: "cube",
+     grabCursor: true,
+     cubeEffect: {
+        shadow: true,
+        slideShadows: true,
+        shadowOffset: 20,
+        shadowScale: 0.94,
+    },
+    freeMode: true,
     });
 });

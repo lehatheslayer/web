@@ -1,5 +1,5 @@
 .swiper {
-   width: 100%;
+   width: 564px;
    height: 100%;
    text-align: center;
 }
@@ -7,4 +7,8 @@
 .swiper-slide {
    text-align: center;
    z-index: 100;
+}
+
+.swiper-button {
+   color: #d31c3e !important;
 }
